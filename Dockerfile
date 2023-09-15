@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.12-rc-alpine
+FROM python:latest
 
 # Set environment variables for Django
 ENV DJANGO_SETTINGS_MODULE=pokerdash.settings
