@@ -2,8 +2,8 @@
 FROM python:3.8-slim
 
 # Set environment variables for Django
-ENV DJANGO_SETTINGS_MODULE=myproject.settings
-ENV DJANGO_SECRET_KEY=your_secret_key
+ENV DJANGO_SETTINGS_MODULE=pokerdash.settings
+ENV DJANGO_SECRET_KEY='django-insecure-g@g7!brjf_4z2q&nf)po$l#((m%p_b29@)+_^l=qy%20z*+%l+'
 ENV DJANGO_DEBUG=False
 
 # Set the working directory in the container
