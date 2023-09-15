@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g@g7!brjf_4z2q&nf)po$l#((m%p_b29@)+_^l=qy%20z*+%l+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.138', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.138', 'localhost', '127.0.0.1', 'poker.bainframe.net']
 
 
 # Application definition
