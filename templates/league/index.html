@@ -79,6 +79,7 @@
                                 <th>Bracelets</th>
                                 <th>Wins</th>
                                 <th>Earnings</th>
+                                <th>Points</th>
                             </tr>
                         </thead>
                         <tfoot>
@@ -88,6 +89,7 @@
                                 <th>Bracelets</th>
                                 <th>Wins</th>
                                 <th>Earnings</th>
+                                <th>Points</th>
                             </tr>
                         </tfoot>
                         <tbody>
@@ -98,6 +100,7 @@
                                     <td>{{ player.total_tournament_wins }}</td>
                                     <td>{{ player.total_match_wins }}</td>
                                     <td>${{ player.total_earnings }}</td>
+                                    <td>{{ player.total_points }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>

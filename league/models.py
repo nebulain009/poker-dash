@@ -19,7 +19,7 @@ class Tournament(models.Model):
     start_date = models.DateField()
     end_date = models.DateField(null=True, blank=True)
     location = models.CharField(max_length=100, null=True, blank=True)
-    buy_in_amount = models.DecimalField(max_digits=10, decimal_places=2)
+    buy_in_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -29,6 +29,8 @@ class Match(models.Model):
     tournament = models.ForeignKey(Tournament, on_delete=models.CASCADE)
     match_date = models.DateField()
     blinds_level = models.CharField(max_length=50)
+    buy_in_amount = models.IntegerField(null=True, blank=True)
+    number_of_players = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return str(self.match_date)
