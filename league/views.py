@@ -5,11 +5,9 @@ from django.db.models import Sum, Case, IntegerField, When, F
 # Create your views here.
 def Home(request):
     players = Player.objects.annotate(
-        total_earnings=Sum(
-            Case(
-                When(playermatchresult__result__name='Win', then=F('playermatchresult__money_result') - F('playermatchresult__match__buy_in_amount')),
-            )
-        ),
+
+        total_earnings = Sum(F('playermatchresult__money_result') - F('playermatchresult__match__buy_in_amount')),
+
         total_tournament_wins=Sum(
             Case(
                 When(playertournamentresult__result__name='Win', then=1),
